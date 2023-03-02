@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+p {
+    color: hsl(227, 10%, 46%);
+}
+
+.bg-top {
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    z-index: -1;
+  }
+  
+  .bg-bottom {
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    z-index: -1;
+  }
+
+  .bg img {
+    width: 100%;
+    height: 100%;
+  }
+
+.container {
+    width: 330px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.top {
+    position: relative;
+    background-image: url("../images/bg-pattern-card.svg");
+    width: 100%;
+    height: 38%;
+    background-size: contain;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bottom img{
+    position: absolute;
+    top: -45%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stats {
+    font-size: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    width: 100%;
+    position: absolute;
+    bottom: -90px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+@media (max-width: 650px) {
+    body {
+        height: 100vh;
+    }
+    .bg-pattern-top {
+        position: absolute;
+        top: -200px;
+        left: -200px;
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .bg-pattern-bottom {
+        position: absolute;
+        background-image: url("../images/bg-pattern-bottom.svg");
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+        bottom: -200px;
+        right: -200px;
+    }
+}
