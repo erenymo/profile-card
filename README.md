@@ -4,5 +4,5 @@
 
 ## Welcome! 👋
 
-Solution URL : [Click Here !] ()
-Live Site URL : [Click Here !] ()
+Solution URL : [Click Here !] (https://www.frontendmentor.io/solutions/profile-card-component-using-html5-and-css3-dou4ellYWU)
+Live Site URL : [Click Here !] (https://erenymo.github.io/profile-card/)
